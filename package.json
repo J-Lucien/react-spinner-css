@@ -5,15 +5,14 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint '**/*.js'",
-    "lint:fix": "prettier-eslint '**/*.js' --write "
+    "lint:fix": "prettier-eslint '**/*.js' --write ",
+    "prepare": "husky"
   },
-  "husky":{
-    "hooks":{
-      "pre-commit":"lint-staged"
-    }
-  },
-  "lint-staged":{
-    "*.js":["npm run lint:fix","git add"]
+  "lint-staged": {
+    "*.js": [
+      "npm run lint:fix",
+      "git add"
+    ]
   },
   "repository": {
     "type": "git",
