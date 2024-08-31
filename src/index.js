@@ -1,1 +1,3 @@
-console.log("Hello, " + "I am Lucien" + "fullstack developper");
+console.log("Hello, "
+      + "I am Lucien" + 
+      "fullstack developper")
